@@ -1,2 +1,4 @@
 ### APA-hub
-# APA-hub is based on the ALA generic-hub
+
+Atlas of Prehistoric Australia Hub
+ - initiated by Flinders University Palaeontology
