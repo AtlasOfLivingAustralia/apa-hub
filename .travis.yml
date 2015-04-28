@@ -1,26 +1,47 @@
 language: groovy
+sudo: false
 jdk:
 - oraclejdk7
 branches:
   only:
   - master
 before_install:
+- export TZ=Australia/Canberra
+- date
 - rm -rf ~/.gvm
 - curl -s get.gvmtool.net > ~/install_gvm.sh
 - chmod 775 ~/install_gvm.sh
-- ~/install_gvm.sh
+- "~/install_gvm.sh"
 - echo "gvm_auto_answer=true" > ~/.gvm/etc/config
 - source ~/.gvm/bin/gvm-init.sh
-- GRAILS_VERSION=`grep '^app\.grails\.version=' ./application.properties | sed -e
-  's/^app\.grails\.version=//g'`
+- GRAILS_VERSION=`grep '^\s*app.grails.version' application.properties | sed -e 's/^\s*app\.grails\.version=//g'
+  | tr -d "\r"`
+- echo "GRAILS_VERSION:$GRAILS_VERSION"
 - gvm install grails $GRAILS_VERSION || true
+- echo "Checkout Configuration"
+- mkdir config
+- git clone https://github.com/AtlasOfLivingAustralia/taxon-overflow.git config
+- git -C config checkout ci-config
 before_script:
-- mkdir -p ~/.grails; wget -q -O ~/.grails/settings.groovy https://raw.githubusercontent.com/AtlasOfLivingAustralia/travis-build-configuration/master/travis_grails_settings_new.groovy
-- MAVEN_REPO="ala-repo-snapshot"; grep '^app\.version=' ./application.properties |
-  grep -q "\-SNAPSHOT"; if [ "$?" = "1" ]; then MAVEN_REPO="ala-repo-release"; fi;
-script: grails clean && grails refresh-dependencies --non-interactive && grails prod
-  war --non-interactive && grails prod maven-deploy --repository=$MAVEN_REPO --non-interactive
+- GRAILS_VERSION_NUMBER=`echo $GRAILS_VERSION | sed -e 's/\.[0-9]*$//g' -e 's/\.//g'
+  | tr -d "\r"`
+- echo "GRAILS_VERSION_NUMBER:$GRAILS_VERSION_NUMBER"
+- GRAILS_SETTINGS_FILE="travis_grails_settings_new.groovy"
+- if [ "$GRAILS_VERSION_NUMBER" -lt "23" ]; then GRAILS_SETTINGS_FILE="travis_grails_settings_old.groovy";
+  fi;
+- echo "GRAILS_SETTINGS_FILE:$GRAILS_SETTINGS_FILE"
+- mkdir -p ~/.grails; wget -q -O ~/.grails/settings.groovy https://raw.githubusercontent.com/AtlasOfLivingAustralia/travis-build-configuration/master/$GRAILS_SETTINGS_FILE
+- MAVEN_REPO="ala-repo-snapshot"
+- grep '^\s*app\.version=' ./application.properties | grep -q "\-SNAPSHOT"; if [ "$?"
+  = "1" ]; then MAVEN_REPO="ala-repo-release"; fi;
+- echo "MAVEN_REPO:$MAVEN_REPO"
+script:
+- grails clean && grails refresh-dependencies --non-interactive && grails test-app
+  -DTAXONOVERFLOW_CONFIG=/home/travis/build/AtlasOfLivingAustralia/taxon-overflow/config
+  && grails prod war --non-interactive && grails prod maven-install --non-interactive
+after_success: '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && grails prod maven-deploy
+  --repository=$MAVEN_REPO --non-interactive'
 env:
   global:
-  - secure: G53K7r0RJpOGVt+HK5VXTyuuMyHZKICNW+94fMSMGQA1SduTbQBG/2MPbI41XpcShAzs6U96xd/6AcEE81hdF0yMysOKHwzlp2B5XSPdQrDZpgU7K7tXh6w5oYkexNokC6+zHFFEyj1HYIPotkhrQkBPg+xt9U1y0uXjlBxjVZM=
-  - secure: NObxPjzVvNf/xCVO4eDUAWvJJlRDYv+XSPBz14FdsH9R2Cq/xjrEgzwlTTOPEBY2ymU/rHkEGskqHg+UeIbZZtCcpq53ABSen6BQ5seVsPXndoCULZ9vsWpbD2wa6iVu9AaODFzhnHk8G5R97gqVl5EO7Tb8HqoWFRPziL8EaUE=
+  - secure: a0EBUo7/7o7JH23L8B9mRkdRq2yCZwCF0R8T8KYOqkjmzOW5duL3n3zjk5Gv8OUwsR0UnQiDMEew1QeWvIJ4Kd4SSc0TA1jtvIDH64F48D33Kn2hHIh6LXiDkdMQQ/hWdcWbM/32Wadk/p8vf/eOuLiegJCa7b1FtDeIXZ4gHm8=
+  - secure: MZdJLkXhfIAwMWDxNCmqbhpQ6dGkaw8vG88ZjlmDoqZYWLWaI/qOdV3sAtK0qnvZFb9o8VupOhcT3k2qOUVjhs/kAY1dVFJAwo4nO7fcgASfoV9CDeuM9VUsSPotpxye6NkOukYa8uEf54YUlMIWjqTgY6QkkwW2ItpFwIgPGYY=
