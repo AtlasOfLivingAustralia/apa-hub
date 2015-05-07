@@ -99,7 +99,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="#">${raw(orgNameLong)}</a>
+            <a class="brand" href="http://www.flinders.edu.au/" style="">
+                <g:img dir="images" file="FUPL_logo.png"/>
+            </a>
+            <a class="brand" href="#" style="font-size: 24px;color:#AAAAAA;line-height: 28px;">
+                &nbsp;&nbsp;${raw(orgNameLong)}</a>
             <div class="nav-collapse collapse">
                 <p class="hide navbar-text pull-right">
                     Logged in as <a href="#" class="navbar-link">${username}</a>
@@ -122,9 +126,9 @@
 <div id="footer">
     <div class="container-fluid">
         <div class="row-fluid">
-            <a href="http://creativecommons.org/licenses/by/3.0/au/" title="External link to Creative Commons"><img src="http://i.creativecommons.org/l/by/3.0/88x31.png" width="88" height="31" alt=""></a>
-            This site is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/au/" title="External link to Creative Commons" class="external">Creative Commons Attribution 3.0 Australia License</a>.
-        Provider content may be covered by other <a href="#terms-of-use" title="Terms of Use">Terms of Use</a>.
+            <a href="http://ala.org.au/"><r:img dir="images" file="atlas-poweredby_rgb-lightbg.png" plugin="biocache-hubs" alt="Powered by ALA logo"/></a>
+            Initiative of Flinders University Palaeontology.
+            <a href="http://www.flinders.edu.au/" title="Flinders University">www.flinders.edu.au</a>
         </div>
     </div>
 </div><!--/#footer -->
