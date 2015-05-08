@@ -123,11 +123,16 @@
 <div id="footer">
     <div class="container-fluid">
         <div class="row-fluid">
-            <a class="brand" style="text-align:left" href="http://www.flinders.edu.au/" style="">
-                <g:img dir="images" file="FUPL_logo.png"/>
-            </a>
-            <centre>The APA is an initiative of Flinders University Palaeontology.</centre>
-            <a style="text-align:right" href="http://ala.org.au/"><r:img dir="images" file="atlas-poweredby_rgb-lightbg.png" plugin="biocache-hubs" alt="Powered by ALA logo"/></a>
+            <div class="span6">
+                <a class="brand" href="http://www.flinders.edu.au/" style="">
+                <g:img dir="${request.contextPath}/images" file="FUPL_logo.png" alt="Flinders University Palaeontology" />
+                </a>
+                &nbsp;&nbsp;&nbsp;&nbsp;The APA is an initiative of Flinders University Palaeontology.
+            </div>
+            <div class="span6" style="text-align:right">
+                <a href="http://ala.org.au/"> 
+                <r:img dir="images" file="atlas-poweredby_rgb-lightbg.png" plugin="biocache-hubs" alt="Powered by ALA logo"/></a>
+            </div>
         </div>
     </div>
 </div><!--/#footer -->
