@@ -104,12 +104,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="brand" href="index" style="font-size: 24px; line-height: 32px; color: #dd7700">&nbsp;&nbsp;${raw(orgNameLong)}&nbsp;&nbsp;</a>
+                <a class="brand" href="/index" style="font-size: 24px; line-height: 32px; color: #dd7700">&nbsp;&nbsp;${raw(orgNameLong)}&nbsp;&nbsp;</a>
                 <div class="nav-collapse collapse" style="font-size: 18px; line-height: 24px; padding-top: 6px;">
                     <ul class="nav">
-                        <li><a href="index">Home</a></li>
-                        <li><a href="about">About</a></li>
-                        <li><a href="contact">Contact</a></li>
+                        <li><a href="/index">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
