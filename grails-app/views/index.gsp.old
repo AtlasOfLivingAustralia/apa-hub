@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="layout" content="${grailsApplication.config.skin.layout}"/>
+        <title>${grailsApplication.config.skin.orgNameLong}</title>
+	</head>
+	<body>
+        <div style="margin: 20px 0;">
+            <h2>${grailsApplication.config.skin.orgNameLong}</h2>
+            <div style="margin: 10px 0;">
+                This is the Atlas of Prehistoric Australia, an initiative of Flinders University Palaeontology.
+                <br>
+            </div>
+            <div id="search">
+                <form name="siteSearchForm" id="siteSearchForm" action="${request.contextPath}/occurrences/search" method="GET">
+                    <label for="search">Quick search</label>
+                    <input id="taxa" title="Search" type="text" name="taxa" placeholder="Quick search" class="name_autocomplete freetext" value="${params.taxa}" /><button value="Search" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+	</body>
+</html>
