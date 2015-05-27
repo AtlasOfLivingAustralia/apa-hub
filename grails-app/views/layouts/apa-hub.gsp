@@ -28,6 +28,7 @@
         border-top: 1px solid #CCC;
         font-size: 12px;
         background-color: #000000;
+        background-image: linear-gradient(to bottom, #353535, #212121);
         color: #FFFFFF;
     }
     #content .nav-tabs > li.active > a {
@@ -104,12 +105,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="brand" href="/index" style="font-size: 24px; line-height: 32px; color: #dd7700">&nbsp;&nbsp;${raw(orgNameLong)}&nbsp;&nbsp;</a>
+                <a class="brand" href="${request.contextPath}/index" style="font-size: 24px; line-height: 32px; color: #dd7700">&nbsp;&nbsp;${raw(orgNameLong)}&nbsp;&nbsp;</a>
                 <div class="nav-collapse collapse" style="font-size: 18px; line-height: 24px; padding-top: 6px;">
                     <ul class="nav">
-                        <li><a href="/index">Home</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="${request.contextPath}/index">Home</a></li>
+                        <li><a href="${request.contextPath}/about">About</a></li>
+                        <li><a href="${request.contextPath}/contact">Contact</a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
@@ -135,10 +136,10 @@
         <div class="row-fluid">
             <div class="span4">
                 <a class="brand" href="http://www.flinders.edu.au/" style="">
-                    <g:img dir="/images" file="FU_logo_inverted_sm.jpg" alt="Flinders University" />
+                    <g:img dir="/images" file="flinders-logo.png" alt="Flinders University" />
                 </a>
                 <a class="brand" href="http://www.flinders.edu.au/" style="">
-                    <g:img dir="/images" file="FUPL_logo_inverted_sm.jpg" alt="Flinders Palaeontology" />
+                    <g:img dir="/images" file="flinders-palaeo-logo.png" alt="Flinders Palaeontology" />
                 </a>
             </div>
             <div class="span6">
@@ -147,7 +148,7 @@
             </div>
             <div class="span2" style="text-align:right">
                 <a href="http://ala.org.au/">
-                    <r:img dir="images" file="atlas-poweredby_rgb-lightbg.png" plugin="biocache-hubs" alt="Powered by ALA logo"/></a>
+                    <g:img dir="/images" file="atlas-poweredby_rgb-darkbg.png" alt="Powered by ALA logo"/></a>
             </div>
         </div>
     </div>

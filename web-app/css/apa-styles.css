@@ -54,14 +54,14 @@ a:focus {
 
 .navbar-inverse .navbar-inner {
     background-color: #1b1b1b;
-    background-image: -moz-linear-gradient(top, #222222, #111111);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
-    background-image: -webkit-linear-gradient(top, #222222, #111111);
-    background-image: -o-linear-gradient(top, #222222, #111111);
-    background-image: linear-gradient(to bottom, #222222, #111111);
+    background-image: -moz-linear-gradient(top, #353535, #212121);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#353535), to(#212121));
+    background-image: -webkit-linear-gradient(top, #353535, #212121);
+    background-image: -o-linear-gradient(top, #353535, #212121);
+    background-image: linear-gradient(to bottom, #353535, #212121);
     background-repeat: repeat-x;
     border-color: #252525;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff353535', endColorstr='#ff212121', GradientType=0);
 }
 
 .navbar-inverse .brand,
@@ -219,6 +219,7 @@ a:focus {
 
 #content .nav-tabs li:not(.active)  a {
     background-color: #000000;
+    background-image: linear-gradient(to bottom, #353535, #212121);
     border: 1px solid #ddd;
     margin-right: 4px;
 }
