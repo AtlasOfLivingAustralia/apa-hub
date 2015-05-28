@@ -23,7 +23,7 @@
 <div class="row-fluid" id="content">
     <div class="span4">
         <h3 style="width:100%;color:#DD7700">The APA</h3>
-        The Atlas of Prehistoric Australia is a storehouse of information on the occurrences of vertebrates through
+        The Atlas of Prehistoric Australia is a storehouse of information on the occurrences of organisms through
         time and space. It is the deep-time add-on to the ALA, and emphasises the continuum between past and present,
         and the valuable role that historical data on taxonomy, ecology and environment can play in improving our
         understanding of Australia’s unique biota.
