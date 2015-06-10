@@ -52,5 +52,6 @@ freshwater about 390 million years ago, as well as those lineages that remained 
 realm.  It shows Australia has the world’s best and most continuous record of lungfishes, from 400 million year old
 taxa like <i>Ichnomylax</i> to the longest lived species of vertebrate on the planet, the Queensland lungfish,
 <i>Neoceratodus forsteri</i>, which first appeared  130 million years ago.
+
 </body>
 </html>
