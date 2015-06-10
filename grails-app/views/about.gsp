@@ -23,11 +23,12 @@ Australia and the four corners of the globe. Across the course of several decade
 datasets for a range of large projects. These were collated to form the core of the Atlas of Prehistoric Australia
 with funding from the Australian National Data Service via its Major Open Data Collection initiative.
 
-<h3 style="width:100%;color:#DD7700">ALMA dataset</h3>
-This Cenozoic-based dataset was collated in the 2000s by Dirk Megirian and Gavin Prideaux to develop an Australian
-Land Mammal Age (ALMA) biochronological scheme (Megirian et al. 2010) primarily via an exhaustive literature review.
-Although mammals were the main focus of the dataset, it includes other vertebrate occurrences and was colloquially
-referred to as “DAVO”, the Database of Vertebrate Occurrences.
+<h3 style="width:100%;color:#DD7700">DAVO dataset</h3>
+The Database of Australasian Vertebrate Occurrences (DAVO) is a terrestrial, Cenozoic dataset collated in the 2000s 
+by Dirk Megirian and Gavin Prideaux to develop the Australian Land Mammal Age biochronological scheme 
+(Megirian et al. 2010, Paleobiology), primarily via an exhaustive literature review. Mammals were the main focus 
+of the dataset, but it includes occurrence data for other vertebrates and terrestrial molluscs found in association 
+with vertebrate fossils.
 
 <h3 style="width:100%;color:#DD7700">Aus BIRDS dataset</h3>
 This dataset was collated by Trevor Worthy. It focusses on the Australian Tertiary avian fossil record however it is
