@@ -39,5 +39,17 @@ the specimens are provided. Taxa are primarily listed by the nomenclature curren
 which they were described, or under which the record was published, are also given. It is envisaged that this data base
 will be periodically updated by the Flinders Palaeontology Laboratory.
 
+<h3 style="width:100%;color:#DD7700">Aus Fossil Fish dataset</h3>
+The fossil fish database incorporates all of the known  taxa of fish species from the perfectly preserved complete
+specimens to those known only from isolated scale or teeth taxa. These records include the world’s possible oldest
+jawed fish remains  (<i>Tantalepis</i>, a 480 million year old series of shark-like scales) to late Tertiary records of extant
+marine fish otoliths, covering around 500 or so taxa. This database covers all groups, living and extinct, from the
+jawless  agnathan groups, through to early jawed fishes like ‘placoderms’ and ‘acanthodians’ plus the great diversity of
+bony fishes (Osteichthyes) and sharks, rays and kin (Chondrichthyes). The database gives the complete geographical and
+temporal picture of how fish evolved throughout Australia as they spread from a dominantly marine environment to
+freshwater about 390 million years ago, as well as those lineages that remained and diversified within the marine
+realm.  It shows Australia has the world’s best and most continuous record of lungfishes, from 400 million year old
+taxa like <i>Ichnomylax</i> to the longest lived species of vertebrate on the planet, the Queensland lungfish,
+<i>Neoceratodus forsteri</i>, which first appeared  130 million years ago.
 </body>
 </html>
