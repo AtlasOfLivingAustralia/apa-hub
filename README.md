@@ -16,12 +16,12 @@ https://github.com/AtlasOfLivingAustralia/ansible-inventories/blob/master/apa.al
 
 If the biocache_hub_version is commented out then presumably it will use the most recent version it can find.
 
-Deploying the current Nexus deployed version of AVH to a virtual machine
+Deploying the current Nexus deployed version of APA to a virtual machine
 ========================================================================
 
 If you have not yet installed Ansible, Vagrant, or VirtualBox, use the instructions at the [ALA Install README.md file](https://github.com/AtlasOfLivingAustralia/ala-install/blob/master/README.md) to install those first for your operating system.
 
-Then, to deploy AVH onto a local virtual box install use the following instructions:
+Then, to deploy APA onto a local virtual box install use the following instructions:
 
 ```
 $ cd gitrepos
