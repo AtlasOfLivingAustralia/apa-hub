@@ -15,6 +15,7 @@
     <style type="text/css">
     body {
         background-color: #ffffff !important;
+        padding-top: 0px;
     }
     #breadcrumb {
         margin-top: 10px;
