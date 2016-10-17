@@ -15,7 +15,6 @@
     <style type="text/css">
     body {
         background-color: #ffffff !important;
-        padding-top: 0px;
     }
     #breadcrumb {
         margin-top: 10px;
@@ -94,6 +93,11 @@
     </r:script>
     <r:layoutResources/>
     <g:layoutHead />
+    <style type="text/css">
+    body {
+        padding-top: 0px;
+    }
+    </style>
 </head>
 <body class="${pageProperty(name:'body.class')?:'nav-collections'}" id="${pageProperty(name:'body.id')}" onload="${pageProperty(name:'body.onload')}">
 <g:set var="fluidLayout" value="${grailsApplication.config.skin.fluidLayout?.toBoolean()}"/>
