@@ -101,6 +101,7 @@
 </head>
 <body class="${pageProperty(name:'body.class')?:'nav-collections'}" id="${pageProperty(name:'body.id')}" onload="${pageProperty(name:'body.onload')}">
 <g:set var="fluidLayout" value="${grailsApplication.config.skin.fluidLayout?.toBoolean()}"/>
+<ala:systemMessage />
 <div class="navbar navbar-inverse navbar-static-top">
     <div class="navbar-inner ">
         <div class="${fluidLayout?'container-fluid':'container'}">
