@@ -127,15 +127,15 @@ environments {
         grails.resources.debug = true // cache & resources plugins
     }
     test {
-//        grails.serverURL = 'http://biocache-test.ala.org.au'
-//        serverName='http://biocache-test.ala.org.au'
-//        security.cas.appServerName = serverName
+        grails.serverURL = 'https://apa-test.ala.org.au'
+        serverName='https://apa-test.ala.org.au'
+        security.cas.appServerName = serverName
         //security.cas.contextPath = "/${appName}"
     }
     production {
-//        grails.serverURL = 'http://biocache.ala.org.au'
-//        serverName='http://biocache.ala.org.au'
-//        security.cas.appServerName = serverName
+        grails.serverURL = 'https://apa.ala.org.au'
+        serverName='https://apa.ala.org.au'
+        security.cas.appServerName = serverName
     }
 }
 

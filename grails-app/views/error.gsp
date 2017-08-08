@@ -46,7 +46,7 @@
         // initialise plugins
         jQuery(function(){
             // autocomplete on navbar search input
-            jQuery("form#search-form-2011 input#search-2011, form#search-inpage input#search, input#search-2013").autocomplete('http://bie.ala.org.au/search/auto.jsonp', {
+            jQuery("form#search-form-2011 input#search-2011, form#search-inpage input#search, input#search-2013").autocomplete('https://bie.ala.org.au/search/auto.jsonp', {
                 extraParams: {limit: 100},
                 dataType: 'jsonp',
                 parse: function(data) {
@@ -150,19 +150,19 @@
     <div class="container-fluid">
         <div class="row-fluid">
             <div class="span4">
-                <a class="brand" href="http://www.flinders.edu.au/" style="">
+                <a class="brand" href="https://www.flinders.edu.au/" style="">
                     <g:img dir="/images" file="flinders-logo.png" alt="Flinders University" />
                 </a>
-                <a class="brand" href="http://www.flinders.edu.au/" style="">
+                <a class="brand" href="https://www.flinders.edu.au/" style="">
                     <g:img dir="/images" file="flinders-palaeo-logo.png" alt="Flinders Palaeontology" />
                 </a>
             </div>
             <div class="span6">
-                The APA is an initiative of <a href="http://www.flinders.edu.au/" style="color:#DD7700" alt="Flinders Palaeontology">Flinders Palaeontology</a>.<BR>
+                The APA is an initiative of <a href="https://www.flinders.edu.au/" style="color:#DD7700" alt="Flinders Palaeontology">Flinders Palaeontology</a>.<BR>
                 This project is supported by the <a href="http://www.ands.org.au/" style="color:#DD7700" alt="Australian National Data Service">Australian National Data Service</a> (ANDS). ANDS is supported by the Australian Government through the National Collaborative Research Infrastructure Strategy Program.
             </div>
             <div class="span2" style="text-align:right">
-                <a href="http://ala.org.au/">
+                <a href="https://www.ala.org.au/">
                     <g:img dir="/images" file="atlas-poweredby_rgb-darkbg.png" alt="Powered by ALA logo"/></a>
             </div>
         </div>

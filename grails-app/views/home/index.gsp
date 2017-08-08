@@ -9,7 +9,7 @@
     <meta name="layout" content="${grailsApplication.config.skin.layout}"/>
     <title>${grailsApplication.config.skin.orgNameLong}</title>
     <r:require modules="jquery, leaflet, mapCommon, searchMap"/>
-    <script src="http://maps.google.com/maps/api/js?v=3.5&sensor=false"></script>
+    <script src="https://maps.google.com/maps/api/js?v=3.5&sensor=false"></script>
     <r:script>
         // global var for GSP tags/vars to be passed into JS functions
         var BC_CONF = {
@@ -95,9 +95,9 @@
             }
         };
 
-        var mbAttr = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-            '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-            'Imagery © <a href="http://mapbox.com">Mapbox</a>';
+        var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
         var mbUrl = 'https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png';
         var defaultBaseLayer = L.tileLayer(mbUrl, {id: 'examples.map-20v6611k', attribution: mbAttr});
 
